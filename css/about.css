@@ -337,7 +337,7 @@ html,body{
 	}	
 }
 
-@media only	screen and (max-height: 850px){
+/*@media only	screen and (max-height: 850px){
 	html,body{
 		overflow: scroll;
 	}
@@ -345,5 +345,5 @@ html,body{
 		margin-bottom: 30vh;
 		margin-left: 15vw;
 	}
-}
+}*/
 /*-----------------------------------------------------------*/
