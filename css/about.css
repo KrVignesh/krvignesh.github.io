@@ -288,15 +288,26 @@ html,body{
 	#about{
 		padding-top: 15vh;
 	}
+	#hi{
+		margin-left: -25vw;: 
+	}
+	#img1{
+		display: none;
+	}
+	#name{
+		margin-left: 15vw;
+	}
+	#bio{
+		margin-left: -25vw;
+	}
 	#res{
-		margin-left: 10vw;
+		margin-left: 43vw;
 	}
 	#mess{
-		margin-left: 65vw;
-		margin-top: -10vh;
+		margin-left: 45vw;
 	}
 	#contact{
-		margin-left: 45vw; 
+		margin-left: 25vw; 
 	}	
 }
 
