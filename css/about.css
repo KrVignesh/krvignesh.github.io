@@ -186,7 +186,10 @@ html,body{
 .fa-github:hover{
 	color: #797983;
 	transition-duration: 0.8s;
-
+}
+.fa-codepen:hover{
+	color: #000000;
+	transition-duration: 0.8s;
 }
 .fa-linkedin:hover{
 	color: #0077B5;
@@ -289,7 +292,7 @@ html,body{
 		padding-top: 15vh;
 	}
 	#hi{
-		margin-left: -25vw;: 
+		margin-left: -25vw;
 	}
 	#img1{
 		display: none;
