@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(105, 249, 243);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    background-color: rgb(28, 37, 50);
+    position: fixed;
+    border-bottom: 1px solid rgb(105, 249, 243);
+    height: 12vh;
+    width: 100vw;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+#headerImg{
+    display: inline;
+}
+#nav{
+    position: absolute;
+    display: inline;
+    right: 0;
+}
+#nav li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 25px;
+}
+.navLink{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 2vw; 
+    
+}
+.navLink:hover{
+    opacity: 0.7;
+}
+#pageHead{
+    text-align: center;
+    margin-top: 30px; 
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#about{
+    padding-top: 12vh;
+    height: 88vh;
+    background-color: rgb(25, 35, 49);
+}
+
+#aboutText{
+    margin-top: 20vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: justify;
+    font-size: 30px;
+}
+#contact{
+    padding-top: 12vh;
+    height: 88vh;
+    background-color: rgb(23, 35, 51);
+}
+#contactForm{
+    padding: 30px;
+}
+.label{
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+    margin-right: 20px; 
+}
+.input{
+    border: 2px solid rgb(105, 249, 243);
+    padding: 10px;
+    width: 90%;
+    margin-left: 10px;
+}
+.details{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    padding-bottom: 25px;
+}
+#submit{
+    padding: 10px;
+    margin-left: 70vw; 
+    color: rgb(28, 37, 50);
+}
+#contactLinks{
+    text-align: center;
+    padding-top: 90px;
+}
+#contactLinks a{
+    margin-right: 20px;
+    display: inline-block;
+    border: 1px solid rgb(105, 249, 243);
+    padding: 10px;
+    text-decoration: none;
+}
+.links:hover{
+    box-shadow: 0px 2px 10px rgb(105, 249, 243);
+    border: 2px solid rgb(105, 249, 243);
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+#location{
+    padding-top: 12vh;
+    height: 88vh;
+    background-color: rgb(18, 32, 51);
+}
+#address{
+    float: left;
+    font-size: 20px;
+    padding: 30vh;
+    margin: 0 auto;
+}
+#addressText{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+#map{
+    float: right;
+    margin: 0 auto;
+    padding: 10vh;
+}
+#leaderboard{
+    padding-top: 12vh;
+    height: 88vh;
+    background-color: rgb(13, 28, 49);
+    
+}
+.lbHead{
+    padding-bottom: 10vh;
+}
+table{
+    margin-top: 5vh;
+    width: 80vw;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid rgb(105, 249, 243);
+    padding: 10px;
+    border-collapse: collapse;
+}
+#footer{
+    background-color: rgb(28, 37, 50);
+    height: 5vh;
+    border-top: 1px solid rgb(105, 249, 243);
+    text-align: center;
+    padding: 10px;
+}
+#foot a{
+    text-decoration: none;
+    border-bottom: 1px solid rgb(105, 249, 243);
+}
+
+@media only	screen and (max-width: 800px){
+    #address{
+        font-size: 20px;
+        padding: 30vh;
+        margin: 0 auto;
+    }
+    #map{
+        margin: 0 auto;
+    }
+}

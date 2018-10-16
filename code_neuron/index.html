@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>How to use Website</title>
+</head>
+<body>
+    <header>
+        <img id="headerImg" src="https://dummyimage.com/200x75/1c2532/68fbf1.png&text=Vignesh+Kr" alt="Website Logo">
+        <ul id="nav">
+            <li><a class="navLink" href="#about">About</a></li>
+            <li><a class="navLink" href="#contact">Contact</a></li>
+            <li><a class="navLink" href="#location">Location</a></li>
+            <li><a class="navLink" href="#leaderboard">Test2</a></li>
+        </ul>
+    </header>
+    <div id="about">
+        <h2 id="pageHead">About Me</h2>
+        <p id="aboutText">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque mollitia aut voluptate quisquam, assumenda delectus eligendi nisi consequuntur ducimus a aspernatur veniam et aliquam error blanditiis possimus! Quasi, quia quibusdam?
+        </p>
+    </div>
+    <div id="contact">
+        <h2 id="pageHead">Get in Touch</h2>
+        <form id="contactForm">
+            <div class="label"><label>Name : </label></div>
+            <div class="details"><input type="text" class="input" placeholder="Enter Your Name" required></div>
+
+            <div class="label"><label>E-Mail : </label></div>
+            <div class="details"><input type="email"class="input" placeholder="Enter Your E-mail Id." required></div>
+
+            <div class="label"><label>Feedback : </label></div>
+            <div class="details"><textarea class="input" style=height:70px; resize:vertical;" placeholder="Enter your Suggestion Here"></textarea></div>
+
+            <div><button id="submit" class="links" type="submit">Submit</button></div>
+        </form>
+        <div id="contactLinks">
+            <a class="links" href="">GitHub</a>
+            <a class="links" href="">Codepen</a>
+        </div>
+    </div>
+    <div id="location">
+        <h2 id="pageHead">Location</h2>
+        <div id="address">
+            <h3 id="addressText">Address : </h3>
+            <p>
+                No.123, Vignesh Street,<br>
+                Mockup Road,<br>
+                Anna Nagar,<br>
+                Chennai 600 040.
+            </p>
+        </div>
+        <div id="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31089.16750021021!2d80.19020918448747!3d13.089936009799798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5264078822719b%3A0xbda01077b89581e2!2sAnna+Nagar%2C+Chennai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1539674704581" 
+                width="600" 
+                height="350" 
+                frameborder="0" 
+                style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div id="leaderboard">
+        <h2 id="pageHead" class="lbHead">Leaderboard</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Team</th> 
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Alpha</td> 
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Beta</td> 
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Citrus</td> 
+                <td>76</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Delta</td> 
+                <td>72</td>
+            </tr>
+
+        </table>
+        </div>
+    <div id="footer">
+        <footer>
+            <p id="foot">
+                This is a Mockup Site designed by <a href="https://krvignesh.github.io/" target="_black">Vignesh</a> for <a href="https://www.codeneuron.com/" target="_black">Codeneuron Technologies.</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
