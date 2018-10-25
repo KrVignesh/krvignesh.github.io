@@ -1,6 +1,9 @@
 body{
     background-color: #F5F5F5;
 }
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Expletus Sans', cursive;
+}
 #heading{
     text-align: center;
     text-transform: uppercase;
@@ -12,6 +15,9 @@ body{
 #mainImg:hover{
     opacity: 0.5;
 }
+.center{
+    text-align: center;
+}
 
 .imgs{
     height: 300px;
@@ -20,6 +26,10 @@ body{
 
 .code{
     background-color: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+}
+.fa-user-circle{
+    font-size: 20px;
 }
 .btn-group a{
     color: black;
