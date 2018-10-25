@@ -1,0 +1,30 @@
+body{
+    background-color: #F5F5F5;
+}
+#heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+#mainImg{
+    height: 300px;
+    width: 300px;
+}
+#mainImg:hover{
+    opacity: 0.5;
+}
+
+.imgs{
+    height: 300px;
+    max-width: 50%;
+}
+
+.code{
+    background-color: #EAEAEA;
+}
+.btn-group a{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+}

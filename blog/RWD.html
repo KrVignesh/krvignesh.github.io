@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Web Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top justify-content-center">
+        <ul class="nav nav-tabs">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://krvignesh.github.io" target="_blank">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <br>
+        <img class="img-fluid mx-auto d-block" src="img/head.jpg">
+        <br>
+        <h1 id="heading" >Creating a Responsive Web Design</h1>
+        <h3>Responsive Web Design(RWD)</h3>
+	    <p>In simple terms RWD is way to display a web page/site properly on different screen size using CSS media Queries or frameworks</p>
+        <h3>Checklist to start off</h3>
+        <ul>
+            <li>Text/Code Editor</li>
+            <li>Browser</li>
+        </ul>
+        <h3>Text/Code Editor</h3>
+        <p>
+            Any Text/code Editor can be used. VSCode is used in this tutorial.<br>
+            VSCode(Visual Studio Code) is developed by microsoft Which is free, <a href="https://github.com/Microsoft/vscode" target="_blank">Open Source</a> and Cross-Platform code editor build for/with everything for software development.
+            Download VSCode from <a href="https://code.visualstudio.com/download" target="_blank">here.</a>
+        </p>
+        <h3>Browser</h3>
+        <p>Any Browser can be used. Chrome is used in this tutorial.</p>
+        <h3>Basics</h3>
+        <p>To start off every web page should have the following elements</p>
+        <pre class="code">
+        <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Page Title Here&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        
+            &lt;!-- 
+            Website 
+            Contents 
+            Goes 
+            Here
+            --&gt;
+            
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </code>
+        </pre>
+        <!-- <img class="img-fluid" src="img/1.png"> -->
+        <p>Now Lets add some content to the webpage inside the <kbd>&lt;body&gt;</kbd> tag</p>
+        <pre class="code">
+        <code>
+        &lt;body&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;h1&gt;This is a basic webpage.&lt;/h1&gt;
+            &lt;p&gt;This is Para.&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;ListItem1&lt;/li&gt;
+                &lt;li&gt;ListItem2&lt;/li&gt;
+                &lt;li&gt;ListItem3&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;img src="img/placeholder.jpg" alt="Dummy Image"&gt;
+        &lt;/body&gt;
+        </code>
+        </pre>
+
+        <!-- <img class="img-fluid" src="img/2.png"> -->
+        <p>This is how our webpage looks like on Desktop and Mobie</p>
+        <img class="img-thumbnail mx-auto d-block" src="img/Site1.PNG">
+        <img class="img-thumbnail mx-auto d-block" src="img/Site2.PNG">
+        <br>
+        <p>Now lets add some CSS</p>
+        <ul>
+            <li>First add Bootstap CDN link in the <kbd>&lt;head&gt;</kbd> tag</li>
+            <pre class="code">
+            <code>
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+            &lt;/head&gt;
+            </code>
+            </pre>
+            <li>Add class <kbd>navbar, nav-item, nav-link</kbd>to respective <kbd>nav</kbd> elements</li>
+            <pre class="code">
+            <code>
+            &lt;nav class="navbar navbar-expand-sm bg-dark justify-content-end"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            </code>
+            </pre>
+            <li>Add class <kbd>list-group, list-group-item</kbd> to respective <kbd>list</kbd> Items</li>
+            <pre class="code">
+            <code>
+            &lt;ul class="list-group"&gt;
+                &lt;li class="list-group-item"&gt;ListItem1&lt;/li&gt;
+                &lt;li class="list-group-item"&gt;ListItem2&lt;/li&gt;
+                &lt;li class="list-group-item"&gt;ListItem3&lt;/li&gt;
+            &lt;/ul&gt;
+            </code>
+            </pre>
+            <li>Add class <kbd>mx-auto d-block</kbd> to <kbd>img</kbd> element</li>
+            <pre class="code">
+            <code>
+            &lt;img class="mx-auto d-block" src="img/placeholder.jpg" alt="Dummy Image"&gt;
+            </code>
+            </pre>
+            <li>Next Enclose the contents of body into a <kbd>&lt;div&gt;</kbd> with class <kbd>container</kbd></li>
+            <pre class="code">
+            <code>
+            &lt;div class="container"&gt;
+                &lt;h1&gt;This is a basic webpage.&lt;/h1&gt;
+                &lt;p&gt;This is Para.&lt;/p&gt;
+                &lt;ul class="list-group"&gt;
+                    &lt;li class="list-group-item"&gt;ListItem1&lt;/li&gt;
+                    &lt;li class="list-group-item"&gt;ListItem2&lt;/li&gt;
+                    &lt;li class="list-group-item"&gt;ListItem3&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;img class="mx-auto d-block" src="img/placeholder.jpg" alt="Dummy Image"&gt;
+            &lt;/div&gt;
+            </code>
+            </pre>
+            <p>Now this is how our page looks like</p>
+            <!-- <img class="img-thumbnail mx-auto d-block" title="Before" src="img/Site1.PNG"> -->
+            <img class="img-thumbnail mx-auto d-block" title="After" src="img/Site3.PNG">
+        </ul>
+        <p>More Resource for Responsive Web Design can be found on MDN, W3Schools</p>
+        <div class="jumbotron">
+            <h6 id="contact">Vignesh Kr</h6>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary"><a href="https://linkedin.com/in/krvigneshvictor/">LinkedIn</a></button>
+                <button type="button" class="btn btn-primary"><a href="https://www.twitter.com/KrVigneshVictor">Twitter</a></button>
+            </div>
+        </div>
+    </div>
+    <footer><p>KrVignesh 2018 </p></footer>
+    
+</body>
+</html>
